@@ -1,0 +1,169 @@
+body{
+margin:0;
+font-family:Segoe UI;
+background:linear-gradient(135deg,#ff512f,#dd2476);
+color:white;
+}
+
+/* LOGIN PAGE */
+
+#loginPage{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.login-box{
+background:white;
+color:#333;
+padding:40px;
+border-radius:15px;
+width:350px;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+text-align:center;
+}
+
+.login-box h2{
+color:#dd2476;
+}
+
+.login-box input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+.login-btn{
+background:#dd2476;
+color:white;
+padding:12px;
+width:100%;
+border:none;
+border-radius:30px;
+cursor:pointer;
+font-size:16px;
+}
+
+/* MAIN SYSTEM */
+
+#mainSystem{
+display:none;
+}
+
+header{
+background:black;
+padding:20px;
+text-align:center;
+font-size:28px;
+font-weight:bold;
+}
+
+.container{
+width:90%;
+max-width:900px;
+margin:auto;
+margin-top:20px;
+}
+
+.card{
+background:white;
+color:#333;
+padding:25px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card h2{
+text-align:center;
+color:#dd2476;
+}
+
+input,select,textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+button{
+padding:10px 20px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+margin-top:10px;
+}
+
+.sos-btn{
+background:#e53935;
+color:white;
+}
+
+.sms-btn{
+background:#43a047;
+color:white;
+}
+
+.clear-btn{
+background:#0288d1;
+color:white;
+}
+
+.sms-preview{
+background:#fff8e1;
+padding:10px;
+border-radius:10px;
+margin-top:15px;
+white-space:pre-wrap;
+font-weight:bold;
+}
+
+.contacts{
+display:flex;
+justify-content:space-around;
+flex-wrap:wrap;
+}
+
+.contact-box{
+background:#fce4ec;
+padding:15px;
+margin:10px;
+border-radius:10px;
+width:200px;
+text-align:center;
+}
+
+.tabs{
+display:flex;
+justify-content:center;
+background:black;
+padding:10px;
+}
+
+.tabs button{
+margin:5px;
+background:#dd2476;
+color:white;
+padding:10px 20px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.tabs button:hover{
+background:#ff512f;
+}
+
+.tab-content{
+display:none;
+margin-top:20px;
+}
+
+footer{
+background:black;
+text-align:center;
+padding:15px;
+margin-top:30px;
+}

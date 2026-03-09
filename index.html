@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Disaster SMS Response System</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- LOGIN PAGE -->
+
+<div id="loginPage">
+
+<div class="login-box">
+
+<h2>🔐 Disaster System Login</h2>
+
+<input type="text" id="username" placeholder="Enter Username">
+<input type="password" id="password" placeholder="Enter Password">
+
+<button class="login-btn" onclick="login()">Login</button>
+
+<p id="loginMsg"></p>
+
+</div>
+
+</div>
+
+<!-- MAIN SYSTEM -->
+
+<div id="mainSystem">
+
+<header>
+🚨 Disaster Management & SMS Response System 🚨
+</header>
+
+<div class="tabs">
+<button onclick="openTab('sos')">SOS Alert</button>
+<button onclick="openTab('contacts')">Emergency Contacts</button>
+<button onclick="openTab('monitor')">Live Monitoring</button>
+<button onclick="openTab('map')">Location Map</button>
+</div>
+
+<div class="container">
+
+<!-- SOS TAB -->
+
+<div id="sos" class="tab-content">
+<div class="card">
+
+<h2>Send Emergency SMS Alert</h2>
+
+<input type="text" id="name" placeholder="Enter Your Name">
+
+<input type="tel" id="phone" placeholder="Enter Contact Number">
+
+<select id="disaster">
+<option value="">Select Disaster Type</option>
+<option>Flood</option>
+<option>Earthquake</option>
+<option>Fire</option>
+<option>Cyclone</option>
+<option>Accident</option>
+</select>
+
+<textarea id="location" rows="3" placeholder="Enter Location Details"></textarea>
+
+<button class="sos-btn" onclick="sendSOS()">Send SOS</button>
+<button class="sms-btn" onclick="sendRealSMS()">Send Real SMS</button>
+<button class="clear-btn" onclick="clearForm()">Clear</button>
+<button class="sms-btn" onclick="getLocation()">Get My Location</button>
+
+<div id="smsOutput" class="sms-preview"></div>
+
+</div>
+</div>
+
+<!-- CONTACT TAB -->
+
+<div id="contacts" class="tab-content">
+<div class="card">
+
+<h2>Emergency Contacts</h2>
+
+<div class="contacts">
+
+<div class="contact-box">
+<h3>Police</h3>
+<p>100</p>
+</div>
+
+<div class="contact-box">
+<h3>Ambulance</h3>
+<p>108</p>
+</div>
+
+<div class="contact-box">
+<h3>Fire</h3>
+<p>101</p>
+</div>
+
+<div class="contact-box">
+<h3>Disaster Control</h3>
+<p>112</p>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<!-- MONITOR TAB -->
+
+<div id="monitor" class="tab-content">
+<div class="card">
+
+<h2>Live Disaster Monitoring</h2>
+
+<ul id="disasterList">
+<li>Flood warning in Coastal Area</li>
+<li>Fire reported near Industrial Zone</li>
+</ul>
+
+</div>
+</div>
+
+<!-- MAP TAB -->
+
+<div id="map" class="tab-content">
+<div class="card">
+
+<h2>Location Map</h2>
+
+<iframe width="100%" height="300"
+src="https://maps.google.com/maps?q=india&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</div>
+</div>
+
+</div>
+
+<footer>
+© 2026 Disaster Response System | Stay Safe
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
